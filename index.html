@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实用网址导航 - 高效工作与生活</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: #f4f7f6; color: #333; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header { text-align: center; padding: 40px 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px; margin-bottom: 30px; }
+        header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        header p { opacity: 0.9; }
+        .search-bar { margin-top: 20px; }
+        .search-bar input { width: 60%; max-width: 400px; padding: 12px 20px; border: none; border-radius: 25px; font-size: 1em; }
+        .category { background: white; padding: 25px; margin-bottom: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .category h2 { border-left: 5px solid #667eea; padding-left: 15px; margin-bottom: 20px; color: #333; }
+        .links-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; }
+        .link-item { display: flex; align-items: center; padding: 12px 15px; background: #f8f9fa; border-radius: 8px; text-decoration: none; color: #555; transition: all 0.3s ease; border: 1px solid #eee; }
+        .link-item:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); background: #667eea; color: white; }
+        .link-item img { width: 20px; height: 20px; margin-right: 10px; border-radius: 3px; }
+        footer { text-align: center; padding: 20px; color: #888; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>🌐 实用网址导航</h1>
+        <p>精选 70+ 高频实用网站，助你提升效率</p>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="搜索网站..." onkeyup="filterLinks()">
+        </div>
+    </header>
+
+    <!-- 1. 影音与生活 -->
+    <section class="category">
+        <h2>🎬 影音与生活</h2>
+        <div class="links-grid">
+            <a href="https://www.bilibili.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=bilibili.com">哔哩哔哩</a>
+            <a href="https://www.youtube.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=youtube.com">YouTube</a>
+            <a href="https://www.netflix.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=netflix.com">Netflix</a>
+            <a href="https://open.spotify.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=spotify.com">Spotify</a>
+            <a href="https://music.163.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=163.com">网易云音乐</a>
+            <a href="https://www.douyin.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=douyin.com">抖音</a>
+            <a href="https://www.xiaohongshu.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=xiaohongshu.com">小红书</a>
+            <a href="https://www.meituan.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=meituan.com">美团</a>
+            <a href="https://www.ctrip.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=ctrip.com">携程</a>
+            <a href="https://www.taobao.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=taobao.com">淘宝</a>
+        </div>
+    </section>
+
+    <!-- 2. 游戏与阅读 (新增板块) -->
+    <section class="category">
+        <h2>🎮 游戏与阅读</h2>
+        <div class="links-grid">
+            <a href="https://store.steampowered.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=steampowered.com">Steam</a>
+            <a href="https://www.epicgames.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=epicgames.com">Epic Games</a>
+            <a href="https://www.ign.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=ign.com">IGN</a>
+            <a href="https://www.gamespot.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=gamespot.com">GameSpot</a>
+            <a href="https://www.3dmgame.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=3dmgame.com">3DM</a>
+            <a href="https://www.qidian.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=qidian.com">起点中文网</a>
+            <a href="https://book.douban.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=douban.com">豆瓣读书</a>
+            <a href="https://weread.qq.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=qq.com">微信读书</a>
+            <a href="https://www.jianshu.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=jianshu.com">简书</a>
+            <a href="https://www.zhihu.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=zhihu.com">知乎日报</a>
+        </div>
+    </section>
+
+    <!-- 3. 搜索与资讯 -->
+    <section class="category">
+        <h2>🔍 搜索与资讯</h2>
+        <div class="links-grid">
+            <a href="https://www.google.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=google.com">Google</a>
+            <a href="https://www.baidu.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=baidu.com">百度</a>
+            <a href="https://www.bing.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=bing.com">Bing</a>
+            <a href="https://www.zhihu.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=zhihu.com">知乎</a>
+            <a href="https://sspai.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=sspai.com">少数派</a>
+            <a href="https://36kr.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=36kr.com">36氪</a>
+            <a href="https://www.huxiu.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=huxiu.com">虎嗅</a>
+        </div>
+    </section>
+
+    <!-- 4. AI 人工智能 -->
+    <section class="category">
+        <h2>🤖 AI 人工智能</h2>
+        <div class="links-grid">
+            <a href="https://chat.openai.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=openai.com">ChatGPT</a>
+            <a href="https://gemini.google.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=gemini.google.com">Gemini</a>
+            <a href="https://claude.ai" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=claude.ai">Claude</a>
+            <a href="https://www.midjourney.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=midjourney.com">Midjourney</a>
+            <a href="https://kimi.moonshot.cn" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=moonshot.cn">Kimi</a>
+            <a href="https://yuanbao.tencent.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=tencent.com">元宝</a>
+        </div>
+    </section>
+
+    <!-- 5. 开发与技术 -->
+    <section class="category">
+        <h2>💻 开发与技术</h2>
+        <div class="links-grid">
+            <a href="https://github.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=github.com">GitHub</a>
+            <a href="https://stackoverflow.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=stackoverflow.com">Stack Overflow</a>
+            <a href="https://developer.mozilla.org" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=mozilla.org">MDN</a>
+            <a href="https://leetcode.cn" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=leetcode.cn">LeetCode</a>
+            <a href="https://vercel.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=vercel.com">Vercel</a>
+        </div>
+    </section>
+
+    <!-- 6. 设计与资源 -->
+    <section class="category">
+        <h2>🎨 设计与资源</h2><h2>设计与资源</h2><h2>设计与资源</h2><h2>设计与资源</h2><h2>设计与资源</h2><h2>设计与资源</h2><h2>设计与资源</h2><h2>设计与资源</h2>
+        <div class="links-grid">
+            <a href="https://www.figma.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=figma.com">Figma</a>
+            <a href="https://www.canva.cn" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=canva.cn">Canva</a>
+            <a href="https://unsplash.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=unsplash.com">Unsplash</a>
+            <a href="https://iconfont.cn" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=iconfont.cn">Iconfont</a>
+        </div>
+    </section>
+
+    <!-- 7. 办公与工具 -->
+    <section class="category">
+        <h2>🛠️ 办公与工具</h2>
+        <div class="links-grid">
+            <a href="https://docs.qq.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=qq.com">腾讯文档</a>
+            <a href="https://www.yuque.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=yuque.com">语雀</a>
+            <a href="https://notion.so" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=notion.so">Notion</a>
+            <a href="https://www.processon.com" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=processon.com">ProcessOn</a>
+            <a href="https://www.speedtest.net" target="_blank" class="link-item"><img src="https://www.google.com/s2/favicons?domain=speedtest.net">SpeedTest</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 实用网址导航 | 点击图标即可跳转 | 本地离线可用</p>
+    </footer>
+</div>
+
+<script>
+    function filterLinks() {
+        const input = document.getElementById('searchInput');
+        const filter = input.value.toUpperCase();
+        const sections = document.querySelectorAll('.links-grid');
+
+        sections.forEach(grid => {
+            const items = grid.getElementsByTagName('a');
+            for (let i = 0; i < items.length; i++) {
+                const txtValue = items[i].textContent || items[i].innerText;
+                items[i].style.display = txtValue.toUpperCase().indexOf(filter) > -1 ? "" : "none";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
